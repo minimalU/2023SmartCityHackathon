@@ -1,0 +1,20 @@
+
+.row div{padding: 20px 10px; border: 1px}
+.jumbotron{
+    background-image: url('../img/smarthealth.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.card-image {
+    width: 400px;
+    height: 230px;
+}
+
+.partner-img {
+    width: 400px;
+    height: 200px;
+}

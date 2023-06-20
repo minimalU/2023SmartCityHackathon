@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+  {% include 'head.html' %}
+
+    <body>
+      {% include 'nav.html' %}
+      <div class="jumbotron jumbotron-fluid text-white text-center p-5">
+        <div class="container">
+            <div class="row text-center p-5">
+            </div>
+            <div class="row text-center">
+            <h2 class="fs-1 bold">PRESCRIPTXN</h2>
+            <p class="fs-4">Master Your Medications And Health</p>
+            </div>
+            <div class="row text-center">
+            </div>
+          </div>
+    </div>
+
+        <!-- About -->
+        <div class="container">
+            <h2 class="display-4 text-center py-5 my-4" id="about">About</h2>
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                <a class="nav-link" href="#our_story" data-bs-toggle="tab">Our Story</a>
+                <a class="nav-link" href="#ourteam" data-bs-toggle="tab">Ourteam</a>
+                <a class="nav-link" href="#learn" data-bs-toggle="tab">Learn</a>
+                <a class="nav-link" href="#sustainability"data-bs-toggle="tab">Sustainability</a>
+            </nav>
+            <div class="tab-content py-5">
+                <div class="tab-pane active" id="our_story">
+                    <h3>Our story</h3>
+                    <p> We live in a world where health and well-being are paramount, but navigating the complexities of healthcare can be daunting, especially managing prescriptions.  
+                        we would like to introduce you to an innovative solution that aims to simplify medication management for all stakeholders, ultimately improving patient outcomes and healthcare efficiency. </p>
+                </div>
+                <div class="tab-pane" id="ourteam">
+                    <h3>Ourteam</h3>
+                    <table class="table table-image">
+                        <tbody>                      
+                          <tr>
+                            <th scope="row">
+                                <img src="static/img/team1.jpg" class="img-fluid img-thumbnail" alt="bryan" width="400" >
+                            </th>
+                            <td class="w-40">
+                                Bryan Abon
+                            </td>
+                            <td>
+                                I am a Nursing Leadership and Management Student at Seneca College – King Campus. I am naturally inquisitive and inclined toward project management, process improvement initiatives, and training and education. 
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <img src="" class="img-fluid img-thumbnail" alt="Eunyoung" width="100" height="100">
+                            </th>
+                            <td class="w-40">
+                                Eunyoung Kim
+                            </td>
+                            <td>Eunyoung</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <img src="" class="img-fluid img-thumbnail" alt="Hyewon" width="100" height="100">
+                            </th>
+                            <td class="w-20">
+                                Heywon Lee
+                            </td>
+                            <td>Heywon</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <img src="static/img/team4.jpg" class="img-fluid img-thumbnail" alt="Yujung" width="400" height="100">
+                            </th>
+                            <td class="w-20">
+                                Yujung Park
+                            </td>
+                            <td>Hello, I am a aspiring software development engineer, a student at the Conestoga college. PRESCRIPTXN  Development, Architecture, Design </td>
+                          </tr> 
+                        </tbody>
+                      </table>  
+
+                </div>
+                <div class="tab-pane" id="learn">
+                    <h3>Learn</h3>
+                    <p> Many patients need help understanding complex drug information. This limited understanding of prescribed medications by patients can lead to poor adherence, increasing the risk of side or adverse effects, and reduced treatment effectiveness. 
+                        On the other hand, the difficulty in efficiently managing prescriptions and monitoring potential drug-to-drug interactions by doctors can compromise patient safety and treatment outcomes. 
+                        Furthermore, the healthcare industry needs innovative solutions to strengthen the healthcare system, improve patient outcomes, and increase access to healthcare services. </p>
+                </div>
+                <div class="tab-pane" id="sustainability">
+                    <h3>Media</h3>
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7ooA8JGu3GY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>                
+            </div>
+            
+        </div>
+
+    </div>
+  </body>
+
+  {% include 'footer.html' %}
+
+    
+      
+      
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+</html>

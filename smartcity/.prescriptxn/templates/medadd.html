@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.html' %}
+
+  <body>
+    {% include 'nav.html' %}
+
+    <div class="container">
+      <h1>Add Medications</h1>
+      <form id="medication-form" method="post" action="{{ url_for('medadd') }}">
+          <div class="form-group">
+              <label for="medication-name">Medication Name:</label>
+              <input type="text" class="form-control" id="medname" name="medicationName">
+          </div>
+          <button type="button" class="btn btn-primary mt-3" id="add-medication-btn">Add</button>
+
+          <ul id="medlist" class="list-group mt-3"></ul>
+
+          <button type="submit" class="btn btn-primary mt-3">Save</button>
+      </form>
+    </div>
+  </body>
+
+  {% include 'footer.html' %}
+
+  <script>
+    var medicationList = [];
+
+    // Add medication to the list
+    function addMedication() {
+        var medicationName = document.getElementById('medname').value;
+        medicationList.push(medicationName);
+        document.getElementById('medname').value = '';
+        updateMedicationList();
+    }
+
+    // Update the medication list display
+    function updateMedicationList() {
+        var medicationListElement = document.getElementById('medlist');
+        medicationListElement.innerHTML = '';
+        for (var i = 0; i < medicationList.length; i++) {
+            var medicationListItem = document.createElement('li');
+            medicationListItem.classList.add('list-group-item');
+            medicationListItem.innerText = medicationList[i];
+            medicationListElement.appendChild(medicationListItem);
+        }
+    }
+
+    // Add medication on button click
+    document.getElementById('add-medication-btn').addEventListener('click', function(event) {
+        addMedication();
+    });
+
+    // Add medication on Enter key press
+    document.getElementById('medname').addEventListener('keypress', function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            addMedication();
+        }
+    });
+
+    // Submit the medication list
+    document.getElementById('medication-form').addEventListener('submit', function(event) {
+        var medicationListInput = document.createElement('input');
+        medicationListInput.type = 'hidden';
+        medicationListInput.name = 'medicationList';
+        medicationListInput.value = JSON.stringify(medicationList);
+        this.appendChild(medicationListInput);
+    });
+</script>  
+
+</html>

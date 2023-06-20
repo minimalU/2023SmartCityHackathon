@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'head.html' %}
+
+    <body>
+        {% include 'nav.html' %}
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                  <table class="table table-image">
+                    <thead>
+                      <tr>
+                        <th scope="col">Medication Name</th>
+                        <th scope="col">Picture</th>
+                        <th scope="col">Dosage</th>
+                        <th scope="col">Effectiveness</th>
+                        <th scope="col">Precautions Side effects</th>
+                        <th scope="col">Manufacturer</th>
+                      </tr>
+                    </thead>
+                    <tbody>                      
+                      <tr>
+                        <th scope="row">tanakan</th>
+                        <td class="w-20">
+                            <img src="static/img/tylenol.jpg" class="img-fluid img-thumbnail" alt="tanakan" width="250">
+                        </td>
+                        <td>1 tablet(s) per day</td>
+                        <td>helpful for improving memory and concentration in elderly patients with mild to moderate dementia</td>
+                        <td>headache, dizziness, upset stomach</td>
+                        <td>Ipsen Pharma</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">metformin 1000mg</th>
+                        <td class="w-20">
+                            <img src="static/img/metformin.jpg" class="img-fluid img-thumbnail" alt="symbicort" width="250" height="100">
+                        </td>
+                        <td>2 tablet(s) per day</td>
+                        <td>helping to control high blood sugar levels. It works by reducing the amount of glucose produced by the liver and improving the body's ability to use insulin, which helps to lower blood sugar levels and improve insulin sensitivity</td>
+                        <td>nausea, vomiting, diarrhea</td>
+                        <td>Teva</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ibuprofen 500mg</th>
+                        <td class="w-20">
+                            <img src="static/img/ibuprofen.jpg" class="img-fluid img-thumbnail" alt="symbicort" width="250" height="100">
+                        </td>
+                        <td>1 tablet(s) per day</td>
+                        <td>helping to relieve pain, inflammation, and fever. It belongs to a class of drugs called nonsteroidal anti-inflammatory drugs (NSAIDs) and works by blocking the production of certain chemicals in the body that cause pain and inflammation.</td>
+                        <td>stomach upset, nausea, vomiting, diarrhea, headache, dizziness</td>
+                        <td>BASF</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">tamiflu</th>
+                        <td class="w-20">
+                            <img src="static/img/tamiflu.jpg" class="img-fluid img-thumbnail" alt="symbicort" width="250" height="100">
+                        </td>
+                        <td>1 tablet(s) per day</td>
+                        <td>slowing down the spread of the influenza virus in the body, which can help to reduce the severity and duration of symptoms and shorten the length of time</td>
+                        <td>nausea, vomiting, stomach pain, headache, and fatigue</td>
+                        <td>Roche</td>
+                      </tr>
+
+                    </tbody>
+                  </table>   
+              </div>
+            </div>
+          </div>
+    </body>
+    {% include 'footer.html' %}
+</html>
